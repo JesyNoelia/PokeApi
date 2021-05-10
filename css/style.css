@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 0);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+header{
+    background-color: rgb(255, 187, 0);
+    position: relative;
+   
+}
+header .nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .nav button{
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 150px 10px 20px 10px;
+    cursor: pointer;
+    border: none;
+}
+header .nav button:hover{
+    background-color: red;
+    color: white;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 20px 0px 10px 40px;
+    position: absolute;
+    
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+.card{
+    background-color: white;
+    width: 350px;
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+    margin:10px 20px 0 20px;
+}
+
+.card-header{
+    width: 100%;
+    display: block;
+    box-shadow: 8px 0 5px grey;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.card-body-img{
+    background-color: white;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    border: 5px solid white;
+    margin-top: -60px;
+}
+
+.card-body-title{
+    margin-top: 20px;
+    text-transform: capitalize;
+
+}
+.card-body-text{
+    color: hsl(229, 23%, 23%);
+    margin: 20px 0;
+
+}
+
+.card-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-footer-social{
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media(min-width: 764px){
+
+    header .nav button{
+    width: 150px;
+    margin: 20px;
+    }
+
+    header img{
+    margin: 40px 0px 10px 40px;
+    }
+    
+    .flex{
+    justify-content: space-around;
+    flex-direction: row;
+   
+    }
+    .card{
+    transition: 1s;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+
+}
+
